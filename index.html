@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://kit.fontawesome.com/d602121c22.js" crossorigin="anonymous"></script>2
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script>
+    <script src="js/index.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="flex-row">
+        <div class="logo">
+            <img src="/images/logo1.png " width="30px" alt="">
+        </div>
+        <div class="profile">
+            <i class="fa-regular fa-user"></i>
+        </div>
+    </header>
+    <div class="main">
+
+        <div class="cover flex-row">
+            <div class="img">
+                <img class="img-cover" id="coverFileUrl" src="" alt="" srcset="">
+            </div>
+            <div class="first-content">
+                <div class="">
+                    <p class="">Investement option</p>
+                    <h1 class="bold">COMMON SHARE</h1>
+                </div>
+                <div class="g"></div>
+                <div class="three-row">
+                    <div class=" two-row">
+                        <div class="project">
+                            <p>Project</p>
+                            <h3 id="coverName"></h3>
+                        </div>
+                        <div class="project">
+                            <p>Owned by</p>
+                            <h3 id="ownerName"></h3>
+                        </div>
+                    </div>
+                    <div class="follow">
+                        <i class="fa-solid fa-book-open-reader"></i>
+                        &nbsp;
+                        <p>Follow NFT</p>
+                    </div>
+                </div>
+                <div class="g"></div>
+                <div class="cover-card">
+                    <p class="cover-card-head" id="expiry">
+                    </p>
+                    <div class="hr"></div>
+                    <div>
+                        <div class=" two-row price">
+                            <div class="price">
+                                <p>Current price</p>
+                                <h1 class="bold" id="price"></h1>
+                            </div>
+                            <div class="price">
+                                <p>Units Available</p>
+                                <h1 class="bold" id="qty"></h1>
+                            </div>
+                        </div>
+                        <div class="g"></div>
+                        <div>
+                            <p>Select how you to pay</p>
+                            <div class="logos">
+                                <img width="80px" src="images/Stripe_logo.png" alt="">&nbsp;&nbsp;&nbsp;
+                                <img width="80px" src="images/Paypal_logo.png" class="call" alt="">
+                            </div>
+                        </div>
+                        <div class="g"></div>
+                        <div>
+                            <div class=" terms">
+                                <input type="checkbox" name="" id="check">
+                                <label for="check">I understand the benefit, terms and risks in buying NFT</label>
+                            </div>
+                            <button class="buy grad">Buy Now</button>
+                            <button class="call req">Request call back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //accordino -->
+        <div class="main_ac">
+
+            <p class="head_ac">Benefits of Investment
+            </p>
+            <div class="hr1"></div>
+
+            <button class="accordion">Should we put all four in the description?</button>
+            <div class="panel">
+                <p>Infographic with icons. Would like more info about e-commerce platforms for books and games.</p>
+            </div>
+            <hr>
+
+            <button class="accordion">Infographic with icons. Would like more info about e-commerce platforms for books
+                and games.</button>
+            <div class="panel">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus ligula suspendisse dictum sed turpis
+                    ante tortor egestas arcu. Morbi at egestas mauris eu at elit phasellus et euismod. Magnis vel est
+                    egestas ut.</p>
+            </div>
+            <hr>
+
+            <button class="accordion">Infographic with icons. Would like more info about e-commerce platforms for books
+                and games.</button>
+            <div class="panel">
+                <p>Infographic with icons. Would like more info about e-commerce platforms for books and games.</p>
+            </div>
+        </div>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+        <div class="main_ac">
+
+            <p class="head_ac">Terms of Investment
+            </p>
+            <div class="hr1"></div>
+
+            <button class="accordion1">Should we put all four in the description?</button>
+            <div class="panel1">
+                <p>Infographic with icons. Would like more info about e-commerce platforms for books and games.</p>
+            </div>
+            <hr>
+
+            <button class="accordion1">Infographic with icons. Would like more info about e-commerce platforms for books
+                and games.</button>
+            <div class="panel1">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus ligula suspendisse dictum sed turpis
+                    ante tortor egestas arcu. Morbi at egestas mauris eu at elit phasellus et euismod. Magnis vel est
+                    egestas ut.</p>
+            </div>
+
+        </div>
+        <script>
+            var acc = document.getElementsByClassName("accordion1");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel1 = this.nextElementSibling;
+                    if (panel1.style.maxHeight) {
+                        panel1.style.maxHeight = null;
+                    } else {
+                        panel1.style.maxHeight = panel1.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+        <div class="main_ac">
+
+            <p class="head_ac">Risks of Investment
+            </p>
+            <div class="hr1"></div>
+
+            <button class="accordion2">Should we put all four in the description?</button>
+            <div class="panel2">
+                <p>Infographic with icons. Would like more info about e-commerce platforms for books and games.</p>
+            </div>
+            <hr>
+
+            <button class="accordion2">Infographic with icons. Would like more info about e-commerce platforms for books
+                and games.</button>
+            <div class="panel2">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus ligula suspendisse dictum sed turpis
+                    ante tortor egestas arcu. Morbi at egestas mauris eu at elit phasellus et euismod. Magnis vel est
+                    egestas ut.</p>
+            </div>
+        </div>
+        <script>
+            var acc = document.getElementsByClassName("accordion2");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel2 = this.nextElementSibling;
+                    if (panel2.style.maxHeight) {
+                        panel2.style.maxHeight = null;
+                    } else {
+                        panel2.style.maxHeight = panel2.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+        <div class="main_ac ">
+
+            <p class="head_ac">How to buy
+            </p>
+            <div class="hr1"></div>
+            <div class="img-acc">
+
+                <div class="acc_pic">
+                </div>
+
+                <div>
+                    <button class="accordion3">Should we put all four in the description?</button>
+                    <div class="panel">
+                        <p>Infographic with icons. Would like more info about e-commerce platforms for books and games.
+                        </p>
+                    </div>
+                    <hr>
+
+                    <button class="accordion3">Infographic with icons. Would like more info about e-commerce platforms
+                        for
+                        books
+                        and games.</button>
+                    <div class="panel3">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus ligula suspendisse dictum sed
+                            turpis
+                            ante tortor egestas arcu. Morbi at egestas mauris eu at elit phasellus et euismod. Magnis
+                            vel
+                            est
+                            egestas ut.</p>
+                    </div>
+                    <hr>
+
+                    <button class="accordion3">Infographic with icons. Would like more info about e-commerce platforms
+                        for
+                        books
+                        and games.</button>
+                    <div class="panel3">
+                        <p>Infographic with icons. Would like more info about e-commerce platforms for books and games.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var acc = document.getElementsByClassName("accordion3");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel3 = this.nextElementSibling;
+                    if (panel3.style.maxHeight) {
+                        panel3.style.maxHeight = null;
+                    } else {
+                        panel3.style.maxHeight = panel3.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+
+        <div class="main_ac">
+
+            <p class="head_ac">Benefits of Investment
+            </p>
+            <div class="hr1"></div>
+            <div class="img-three">
+                <div>
+                    <p>join <br> <b>Discord</b></p>
+                    <i class="fa-brands fa-discord"></i>
+                </div>
+                <div>
+                    <p>share <br> <b>Link</b></p>
+                    <p style="position:relative; right: -55px !important">
+
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </p>
+                </div>
+                <div>
+                    <p>explore <br> <b>On Chain</b></p>
+                    <i class="fa-sharp fa-solid fa-chevron-right"></i>
+                </div>
+
+            </div>
+        </div>
+        <div class="g "></div>
+        <div class="g "></div>
+        <h3>More from this project</h3>
+        <div class="g"></div>
+        <div id="wrapper">
+            <div id="carousel">
+                <div id="content">
+                    <!-- <div class="item">
+                        <img width="100%" src="images/scroll.png" />
+                        <div class="lambi_main">
+                            <div class="bird">
+                                <div>
+                                    <img src="images/bird.png" alt="">
+                                </div>
+                                <div class="lambi">
+                                    <b>Lambiyan</b>
+                                    <p>Owned by- Roshan</p>
+                                </div>
+                            </div>
+                            <div class="lambi_price flex-row">
+                                <p>Price - INR 5,33,300</p>
+                                <button class="grad">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img width="100%" src="images/scroll.png" />
+                        <div class="lambi_main">
+                            <div class="bird">
+                                <div>
+                                    <img src="images/bird.png" alt="">
+                                </div>
+                                <div class="lambi">
+                                    <b>Lambiyan</b>
+                                    <p>Owned by- Roshan</p>
+                                </div>
+                            </div>
+                            <div class="lambi_price flex-row">
+                                <p>Price - INR 5,33,300</p>
+                                <button class="grad">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img width="100%" src="images/scroll.png" />
+                        <div class="lambi_main">
+                            <div class="bird">
+                                <div>
+                                    <img src="images/bird.png" alt="">
+                                </div>
+                                <div class="lambi">
+                                    <b>Lambiyan</b>
+                                    <p>Owned by- Roshan</p>
+                                </div>
+                            </div>
+                            <div class="lambi_price flex-row">
+                                <p>Price - INR 5,33,300</p>
+                                <button class="grad">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img width="100%" src="images/scroll.png" />
+                        <div class="lambi_main">
+                            <div class="bird">
+                                <div>
+                                    <img src="images/bird.png" alt="">
+                                </div>
+                                <div class="lambi">
+                                    <b>Lambiyan</b>
+                                    <p>Owned by- Roshan</p>
+                                </div>
+                            </div>
+                            <div class="lambi_price flex-row">
+                                <p>Price - INR 5,33,300</p>
+                                <button class="grad">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img width="100%" src="images/scroll.png" />
+                        <div class="lambi_main">
+                            <div class="bird">
+                                <div>
+                                    <img src="images/bird.png" alt="">
+                                </div>
+                                <div class="lambi">
+                                    <b>Lambiyan</b>
+                                    <p>Owned by- Roshan</p>
+                                </div>
+                            </div>
+                            <div class="lambi_price flex-row">
+                                <p>Price - INR 5,33,300</p>
+                                <button class="grad">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img width="100%" src="images/scroll.png" />
+                        <div class="lambi_main">
+                            <div class="bird">
+                                <div>
+                                    <img src="images/bird.png" alt="">
+                                </div>
+                                <div class="lambi">
+                                    <b>Lambiyan</b>
+                                    <p>Owned by- Roshan</p>
+                                </div>
+                            </div>
+                            <div class="lambi_price flex-row">
+                                <p>Price - INR 5,33,300</p>
+                                <button class="grad">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img width="100%" src="images/scroll.png" />
+                        <div class="lambi_main">
+                            <div class="bird">
+                                <div>
+                                    <img src="images/bird.png" alt="">
+                                </div>
+                                <div class="lambi">
+                                    <b>Lambiyan</b>
+                                    <p>Owned by- Roshan</p>
+                                </div>
+                            </div>
+                            <div class="lambi_price flex-row">
+                                <p>Price - INR 5,33,300</p>
+                                <button class="grad">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img width="100%" src="images/scroll.png" />
+                        <div class="lambi_main">
+                            <div class="bird">
+                                <div>
+                                    <img src="images/bird.png" alt="">
+                                </div>
+                                <div class="lambi">
+                                    <b>Lambiyan</b>
+                                    <p>Owned by- Roshan</p>
+                                </div>
+                            </div>
+                            <div class="lambi_price flex-row">
+                                <p>Price - INR 5,33,300</p>
+                                <button class="grad">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img width="100%" src="images/scroll.png" />
+                        <div class="lambi_main">
+                            <div class="bird">
+                                <div>
+                                    <img src="images/bird.png" alt="">
+                                </div>
+                                <div class="lambi">
+                                    <b>Lambiyan</b>
+                                    <p>Owned by- Roshan</p>
+                                </div>
+                            </div>
+                            <div class="lambi_price flex-row">
+                                <p>Price - INR 5,33,300</p>
+                                <button class="grad">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img width="100%" src="images/scroll.png" />
+                        <div class="lambi_main">
+                            <div class="bird">
+                                <div>
+                                    <img src="images/bird.png" alt="">
+                                </div>
+                                <div class="lambi">
+                                    <b>Lambiyan</b>
+                                    <p>Owned by- Roshan</p>
+                                </div>
+                            </div>
+                            <div class="lambi_price flex-row">
+                                <p>Price - INR 5,33,300</p>
+                                <button class="grad">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img width="100%" src="images/scroll.png" />
+                        <div class="lambi_main">
+                            <div class="bird">
+                                <div>
+                                    <img src="images/bird.png" alt="">
+                                </div>
+                                <div class="lambi">
+                                    <b>Lambiyan</b>
+                                    <p>Owned by- Roshan</p>
+                                </div>
+                            </div>
+                            <div class="lambi_price flex-row">
+                                <p>Price - INR 5,33,300</p>
+                                <button class="grad">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img width="100%" src="images/scroll.png" />
+                        <div class="lambi_main">
+                            <div class="bird">
+                                <div>
+                                    <img src="images/bird.png" alt="">
+                                </div>
+                                <div class="lambi">
+                                    <b>Lambiyan</b>
+                                    <p>Owned by- Roshan</p>
+                                </div>
+                            </div>
+                            <div class="lambi_price flex-row">
+                                <p>Price - INR 5,33,300</p>
+                                <button class="grad">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img width="100%" src="images/scroll.png" />
+                        <div class="lambi_main">
+                            <div class="bird">
+                                <div>
+                                    <img src="images/bird.png" alt="">
+                                </div>
+                                <div class="lambi">
+                                    <b>Lambiyan</b>
+                                    <p>Owned by- Roshan</p>
+                                </div>
+                            </div>
+                            <div class="lambi_price flex-row">
+                                <p>Price - INR 5,33,300</p>
+                                <button class="grad">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img width="100%" src="images/scroll.png" />
+                        <div class="lambi_main">
+                            <div class="bird">
+                                <div>
+                                    <img src="images/bird.png" alt="">
+                                </div>
+                                <div class="lambi">
+                                    <b>Lambiyan</b>
+                                    <p>Owned by- Roshan</p>
+                                </div>
+                            </div>
+                            <div class="lambi_price flex-row">
+                                <p>Price - INR 5,33,300</p>
+                                <button class="grad">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img width="100%" src="images/scroll.png" />
+                        <div class="lambi_main">
+                            <div class="bird">
+                                <div>
+                                    <img src="images/bird.png" alt="">
+                                </div>
+                                <div class="lambi">
+                                    <b>Lambiyan</b>
+                                    <p>Owned by- Roshan</p>
+                                </div>
+                            </div>
+                            <div class="lambi_price flex-row">
+                                <p>Price - INR 5,33,300</p>
+                                <button class="grad">Buy Now</button>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <button id="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
+                </svg>
+            </button>
+            <button id="next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+                </svg>
+            </button>
+        </div>
+        <button class="view">View Projects</button>
+        <div>
+            <ul>
+                <li>About</li>
+                <li>Terms of Use </li>
+                <li>Privacy Policy </li>
+                <li>Knowledge Base </li>
+                <li>Customer Support </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+
+</html>
